@@ -30,12 +30,9 @@ for (i,ch) in enumerate(data):
 
 print("\nattempting to match finger print, scan in 3 seconds")
 time.sleep(3)
-print("before capture image\n");
+print("before capture image\n")
 fpsensor.captureImage()
 print("after capture image, match model\n")
 r = fpsensor.matchModel(10)
 print("match model\n")
 print(str(r))
-
-
-
